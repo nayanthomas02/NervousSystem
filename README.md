@@ -1,0 +1,3 @@
+# nervous_system
+
+To avoid massive Firebase "Read" costs with 10,000 concurrent chat users, I would structure the chat using paginated queries with limits (e.g., `limitToLast(20)`) so clients only listen to the most recent messages instead of the full chat history. I would separate chat rooms into smaller collections/channels and use indexed timestamps to efficiently fetch only new messages after the user's last read position. Additionally, I would avoid real-time listeners on large global collections by using selective listeners, caching, batched writes, and Cloud Functions for aggregation or moderation tasks.

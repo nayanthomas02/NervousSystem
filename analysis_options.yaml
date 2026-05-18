@@ -1,0 +1,17 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_specify_types
+    - avoid_print
+    - avoid_dynamic_calls
+    - empty_catches
+    - unawaited_futures
+    - cancel_subscriptions
+    - close_sinks
+    - prefer_const_constructors
+    - always_declare_return_types
+    - prefer_final_locals
+    - prefer_is_empty
+    - unnecessary_brace_in_string_interps
+    - valid_regexps
